@@ -11,8 +11,7 @@ class Program
 
 			if (char.IsLetter(inputChar))
 			{
-				string diamond = DiamondPrinter.GenerateDiamond(inputChar, renderUnderscore);
-				Console.WriteLine(diamond);  // Print or use the string as needed
+				PrintDiamond(inputChar, renderUnderscore);
 			}
 			else
 			{
