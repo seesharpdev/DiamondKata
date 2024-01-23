@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondKata", "DiamondKata.csproj", "{E8251131-5799-4945-BBD1-5EDA93D0D6DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiamondPrinterTests", "..\DiamondPrinterTests\DiamondPrinterTests.csproj", "{0EFFCB39-53CF-4BF7-AD92-F658F56CE55F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondPrinterTests", "DiamondPrinterTests\DiamondPrinterTests.csproj", "{C490F71D-DC5A-4E2C-8B3E-5FCBB30805A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{E8251131-5799-4945-BBD1-5EDA93D0D6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8251131-5799-4945-BBD1-5EDA93D0D6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8251131-5799-4945-BBD1-5EDA93D0D6DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EFFCB39-53CF-4BF7-AD92-F658F56CE55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EFFCB39-53CF-4BF7-AD92-F658F56CE55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EFFCB39-53CF-4BF7-AD92-F658F56CE55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EFFCB39-53CF-4BF7-AD92-F658F56CE55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C490F71D-DC5A-4E2C-8B3E-5FCBB30805A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C490F71D-DC5A-4E2C-8B3E-5FCBB30805A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C490F71D-DC5A-4E2C-8B3E-5FCBB30805A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C490F71D-DC5A-4E2C-8B3E-5FCBB30805A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
