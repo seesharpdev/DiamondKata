@@ -1,16 +1,18 @@
 ﻿using System;
 
-class DiamondPrinter
+class Program
 {
 	static void Main(string[] args)
 	{
-		if (args.Length == 1)
+		if (args.Length == 1 || (args.Length == 2 && args[1].Equals("-r", StringComparison.OrdinalIgnoreCase)))
 		{
 			char inputChar = args[0].ToUpper()[0];
+			bool renderUnderscore = args.Length == 2 && args[1].Equals("-r", StringComparison.OrdinalIgnoreCase);
 
 			if (char.IsLetter(inputChar))
 			{
-				PrintDiamond(inputChar);
+				string diamond = DiamondPrinter.GenerateDiamond(inputChar, renderUnderscore);
+				Console.WriteLine(diamond);  // Print or use the string as needed
 			}
 			else
 			{
@@ -19,69 +21,7 @@ class DiamondPrinter
 		}
 		else
 		{
-			Console.WriteLine("Usage: Diamond.exe <character>");
-		}
-	}
-
-	static void PrintDiamond(char midChar)
-	{
-		// Calculate the size of the diamond based on the input character
-		int diamondSize = midChar - 'A' + 1;
-
-		// Print upper half of the diamond
-		for (int row = 0; row < diamondSize; row++)
-		{
-			// Print leading spaces before the first character
-			for (int leadingSpaces = 0; leadingSpaces < diamondSize - row - 1; leadingSpaces++)
-			{
-				Console.Write(" ");
-			}
-
-			// Print the first character in the row
-			Console.Write((char)('A' + row));
-
-			// If it's not the first row, print the spaces between characters
-			if (row > 0)
-			{
-				for (int spacesBetween = 0; spacesBetween < row * 2 - 1; spacesBetween++)
-				{
-					Console.Write(" ");
-				}
-
-				// Print the second character in the row
-				Console.Write((char)('A' + row));
-			}
-
-			// Move to the next line after printing the row
-			Console.WriteLine();
-		}
-
-		// Print lower half of the diamond
-		for (int row = diamondSize - 2; row >= 0; row--)
-		{
-			// Print leading spaces before the first character
-			for (int leadingSpaces = 0; leadingSpaces < diamondSize - row - 1; leadingSpaces++)
-			{
-				Console.Write(" ");
-			}
-
-			// Print the first character in the row
-			Console.Write((char)('A' + row));
-
-			// If it's not the first row, print the spaces between characters
-			if (row > 0)
-			{
-				for (int spacesBetween = 0; spacesBetween < row * 2 - 1; spacesBetween++)
-				{
-					Console.Write(" ");
-				}
-
-				// Print the second character in the row
-				Console.Write((char)('A' + row));
-			}
-
-			// Move to the next line after printing the row
-			Console.WriteLine();
+			Console.WriteLine("Usage: Diamond.exe <character> [-r]");
 		}
 	}
 }
